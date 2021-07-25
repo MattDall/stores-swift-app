@@ -17,10 +17,7 @@ import class CoreLocation.CLLocation
 
 struct MapView: View {
     
-    private let mapView = MKMapView()
-    
     @State var pois: [Poi] = []
-
     
     @State private var region: MKCoordinateRegion = {
         var mapCoordinates = CLLocationCoordinate2D(latitude: 49.742859, longitude: 15.338412)
@@ -29,30 +26,34 @@ struct MapView: View {
 
         return mapRegion
     }()
-
+    var locationManager = CLLocationManager()
+        
 // MARK - BODY
-  //  map.showsUserLocation = true
     var body: some View {
-        //MARK: N1
-        Map(coordinateRegion: $region)
+        Map(coordinateRegion: $region, showsUserLocation: true, annotationItems: pois) { poi in
+            MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: poi.location.latitude, longitude: poi.location.longitude)){
+                VStack {
+                    Text(poi.name!)
+                        .font(.body)
+                 //       .bold()
+                    Image(systemName: "mappin.circle.fill")
+                        .foregroundColor(.red)
+                }
+            }
+        }
             .edgesIgnoringSafeArea(.all)
             .onAppear {
                      Api().getPois {(pois) in
                         self.pois = pois
                      }
             }
-        ForEach(pois) { poi in
-            NavigationLink(destination: PoiDetailView(poi: poi)){
-           // MapViewController(poi: poi)
-        }
-        }
 } //: VIEW
 } //: MAPVIEW
 
-// MARK - PREVIEW
-//struct MapView_Previews: PreviewProvider {
-//    static var pois: [Poi] = []
-//    static var previews: some View {
-//        MapView()
-//    }
-//}
+// MARK -PREVIEW
+struct MapView_Previews: PreviewProvider {
+    static var pois: [Poi] = []
+    static var previews: some View {
+        MapView()
+    }
+}

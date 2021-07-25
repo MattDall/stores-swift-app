@@ -15,7 +15,7 @@ struct MainView: View {
                     Image(systemName: "house.fill")
                     Text ("Home")
                 }
-            MapViewV2()
+            MapView()
                 .tabItem {
                     Image(systemName: "map")
                     Text ("Map")

@@ -35,7 +35,7 @@ struct smallMapView: UIViewRepresentable {
         let annotation = MKPointAnnotation()
             annotation.coordinate = location
             annotation.title = poi.name
-            annotation.subtitle = "Visit us soon"
+            annotation.subtitle = poi.address?.short
         view.addAnnotation(annotation)
 
     }
