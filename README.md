@@ -9,6 +9,6 @@ Application core functionalities:
 - Displaying Points of interests (POI) in the list 
 - POI record detail 
 
-Copyright © Matúš Dalloš
-All right reserved
+Copyright © Matúš Dalloš,
+All right reserved,
 2021
