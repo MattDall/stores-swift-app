@@ -14,12 +14,12 @@
 		63127B1A2690E26900296150 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63127B192690E26900296150 /* Preview Assets.xcassets */; };
 		63127B262691A5E900296150 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63127B252691A5E900296150 /* MainView.swift */; };
 		63127B2B2691E7AD00296150 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63127B2A2691E7AD00296150 /* LocationModel.swift */; };
-		63127B2D2692136700296150 /* pois.json in Resources */ = {isa = PBXBuildFile; fileRef = 63127B2C2692136700296150 /* pois.json */; };
 		6341DA9126978B3800B3D248 /* smallMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6341DA9026978B3800B3D248 /* smallMapView.swift */; };
 		6346028B269634530039CC47 /* PoiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6346028A269634530039CC47 /* PoiDetailView.swift */; };
 		634C92A52694E8530014051E /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634C92A42694E8530014051E /* CodableBundleExtension.swift */; };
 		6365263E2697682A00E5E822 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6365263D2697682A00E5E822 /* InfoView.swift */; };
-		63863BD52698C95F00FDF58D /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 63863BD42698C95F00FDF58D /* covers.json */; };
+		637928B726ADA8B5002581EE /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 637928B626ADA8B5002581EE /* covers.json */; };
+		637928B926ADA8E3002581EE /* pois.json in Resources */ = {isa = PBXBuildFile; fileRef = 637928B826ADA8E3002581EE /* pois.json */; };
 		63863BEA2699D97200FDF58D /* MapViewV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63863BE92699D97200FDF58D /* MapViewV2.swift */; };
 		63F8704D269340CF00B5BE16 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F8704C269340CF00B5BE16 /* CenterModifier.swift */; };
 		63F87052269345AD00B5BE16 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F87051269345AD00B5BE16 /* CoverImageView.swift */; };
@@ -43,12 +43,12 @@
 		63127B1B2690E26900296150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63127B252691A5E900296150 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		63127B2A2691E7AD00296150 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
-		63127B2C2692136700296150 /* pois.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pois.json; sourceTree = "<group>"; };
 		6341DA9026978B3800B3D248 /* smallMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smallMapView.swift; sourceTree = "<group>"; };
 		6346028A269634530039CC47 /* PoiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiDetailView.swift; sourceTree = "<group>"; };
 		634C92A42694E8530014051E /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		6365263D2697682A00E5E822 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		63863BD42698C95F00FDF58D /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
+		637928B626ADA8B5002581EE /* covers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
+		637928B826ADA8E3002581EE /* pois.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pois.json; sourceTree = "<group>"; };
 		63863BE92699D97200FDF58D /* MapViewV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewV2.swift; sourceTree = "<group>"; };
 		63F8704C269340CF00B5BE16 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 		63F87051269345AD00B5BE16 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
@@ -92,10 +92,10 @@
 		63127B112690E26700296150 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				637928B526ADA893002581EE /* Data */,
 				63F8706E2694396C00B5BE16 /* Controller */,
 				63F8704A26933FDF00B5BE16 /* App */,
 				63127B292691A94B00296150 /* Model */,
-				63127B212691A53900296150 /* Data */,
 				63127B222691A56200296150 /* View */,
 				63F8704E269340F800B5BE16 /* Extensions */,
 				63F8704B269340B100B5BE16 /* Modifier */,
@@ -114,15 +114,6 @@
 				63F8707E26945FFA00B5BE16 /* pois.json */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		63127B212691A53900296150 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				63863BD42698C95F00FDF58D /* covers.json */,
-				63127B2C2692136700296150 /* pois.json */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		63127B222691A56200296150 /* View */ = {
@@ -145,6 +136,15 @@
 				63F870552693460F00B5BE16 /* CoverImageModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		637928B526ADA893002581EE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				637928B626ADA8B5002581EE /* covers.json */,
+				637928B826ADA8E3002581EE /* pois.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		63F8704A26933FDF00B5BE16 /* App */ = {
@@ -242,11 +242,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63863BD52698C95F00FDF58D /* covers.json in Resources */,
+				637928B926ADA8E3002581EE /* pois.json in Resources */,
 				63F8707F26945FFA00B5BE16 /* pois.json in Resources */,
+				637928B726ADA8B5002581EE /* covers.json in Resources */,
 				63127B1A2690E26900296150 /* Preview Assets.xcassets in Resources */,
 				63127B172690E26900296150 /* Assets.xcassets in Resources */,
-				63127B2D2692136700296150 /* pois.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
