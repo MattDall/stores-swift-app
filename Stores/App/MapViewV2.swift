@@ -12,7 +12,7 @@ struct City: Identifiable {
     let id = UUID()
     let coordinate: CLLocationCoordinate2D
 }
-
+//  NOT USED, ONLY FOR TESTING PURPOSES
 struct MapViewV2: View {
     @State private var cities: [City] = [
             City(coordinate: .init(latitude: 50.10780923355383, longitude:  14.45360207090067)),

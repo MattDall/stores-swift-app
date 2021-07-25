@@ -24,7 +24,6 @@ struct ListView: View {
 
                     .frame(width: 50, height: 50)
                     .cornerRadius(70)
-                    //.foregroundColor(.blue)
                     
                 VStack{
                     Text(poi.name!)

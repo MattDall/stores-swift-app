@@ -82,18 +82,6 @@ struct PoiDetailView: View {
                     .frame(height: 200)
                     .cornerRadius(12)
             }
-            
-            //OPENING HOURS
-            Text("Opening Hours")
-                .font(.title2)
-                .fontWeight(.semibold)
-                .lineLimit(1)
-                .multilineTextAlignment(.leading)
-            Group {
-                    
-                }
-            .padding(.horizontal)
-            
         }
         .navigationBarTitle(poi.name!, displayMode: .inline)
     } //SCROLL VIEW
@@ -101,9 +89,3 @@ struct PoiDetailView: View {
     }
 
 }
-
-//struct PoiDetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PoiDetailView(poi: poi)
-//    }
-//}
