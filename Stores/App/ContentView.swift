@@ -28,6 +28,7 @@ struct ContentView: View {
             
             Spacer ()
             InfoView()
+                .modifier(CenterModifier())
             
             CreditsView()
               .modifier(CenterModifier())

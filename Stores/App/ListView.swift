@@ -30,7 +30,9 @@ struct ListView: View {
                     Text(poi.name!)
                         .font(.headline)
                         .multilineTextAlignment(.center)
-                    Text(poi.address!.full).font(.subheadline)
+                    Text(poi.address!.full)
+                        .font(.subheadline)
+                        .multilineTextAlignment(.center)
                 }
             }
         } //NAVIGATION_LINK
